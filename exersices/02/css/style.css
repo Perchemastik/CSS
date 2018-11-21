@@ -1,0 +1,87 @@
+@import "_borderbox.css"
+
+body{
+	font-family: arial;
+}
+ul{
+	padding: 0px;
+	/*display: block*/
+}
+a{
+	text-decoration: none;
+	color: grey;
+}
+li{
+	/*display: inline-block;*/
+	list-style-type: none;
+	float: left;
+	width: 25%;
+	background-color: yellow;
+	border: 1px solid black;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.wrapper:after{
+	content: '';
+	clear: both;
+	display: block;
+}
+
+li:hover{
+	text-decoration: underline;
+	background-color: green;
+	cursor: crosshair;
+}
+
+.box{
+	width: 20px;
+	height: 20px;
+	border: 1px solid black;
+	float: left;
+	padding: 20px;
+	text-align: center;
+}
+
+.box:nth-child(odd){
+	background-color: tomato;
+}
+
+p#quote:before{
+	content: "Quotes: ";
+	color: gray;
+	clear: both;
+	display: block;
+}
+
+p#quote:after{
+	content: " |DeadPool";
+	color: gray;	
+	clear: both;
+	display: block;
+}
+
+p#quote{
+	background-color: #f2f6c1;
+	border: dotted grey;
+	border-radius: 15px;
+	padding: 20px;
+	font-family: Georgia, serif;
+}
+
+span{
+	width: 100px;
+	height: 100px;
+	background-color: lightgrey;
+	border: dotted grey;
+	border-radius: 15px;
+	padding: 20px;
+	font-family: Georgia, serif;
+	display: inline-block;
+	text-align: center;
+}
+
+div.center-auto{
+	width: 40%;
+	margin: 0 auto;
+}
